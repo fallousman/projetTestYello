@@ -23,7 +23,7 @@ __php et mysql car tres simple pour ces types d'application facile a utilises et
 
 ## Configuration de la base de données
 
-1. Importez le fichier `create_database.sql` dans votre gestionnaire de base de données pour créer la structure.
+1. Importez le fichier `education_plateform.sql` dans votre gestionnaire de base de données pour créer la structure.
 2. Copiez le fichier `db.php` et remplissez les informations de connexion.
 
 
