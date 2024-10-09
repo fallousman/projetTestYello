@@ -22,6 +22,10 @@ Quant à MySQL, il s'agit d'un système de gestion de base de données relationn
 1. Clonez le dépôt.
 2. Installez les dépendances avec Composer.
 3. Configurez votre serveur web pour pointer vers le dossier `public`.
+4. L'API repond a l'url:http://localhost:8080/projects/projetTestYello/api.php 
+5. Pour recuperer,supprimer ou mettre a jour un cour specifique : http://localhost:8080/projects/projetTestYello/api.php/courses?id=(numID) (sur postman ou autre)
+6. Pour executer les testes unitaires on se positionnne sur la racine du projet et on tape la commande suivante: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/CoursesApiTest.php
+il faut biensur installer phpUnit avant.
 
 ## Configuration de la base de données
 
