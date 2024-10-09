@@ -5,8 +5,9 @@ Ce projet est une API RESTful pour gérer des cours éducatifs, permettant aux u
 
 ## Fonctionnalités
 - Ajouter des cours
-- Récupérer la liste des cours
-- Mettre à jour des cours
+- Récupérer la liste de tous les cours
+- Récupérer un cour specifique grace avec l'ID
+- Mettre à jour des cours avec l'ID
 - Supprimer des cours
 
 ## Technologies utilisées
@@ -21,9 +22,9 @@ Ce projet est une API RESTful pour gérer des cours éducatifs, permettant aux u
 ## Configuration de la base de données
 
 1. Importez le fichier `create_database.sql` dans votre gestionnaire de base de données pour créer la structure.
-2. Copiez le fichier `config.sample.php` en tant que `db.php` et remplissez les informations de connexion.
+2. Copiez le fichier `db.php` et remplissez les informations de connexion.
 
 
 ## Dépendances
-- PHP >= 8.2.4
+- PHP  8.2.4
 - Composer v2.8.1
