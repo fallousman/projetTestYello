@@ -13,6 +13,8 @@ Ce projet est une API RESTful pour gérer des cours éducatifs, permettant aux u
 ## Technologies utilisées
 - PHP
 - PHPUnit pour les tests unitaires
+- Mysql pour la base de donnee
+__php et mysql car tres simple pour ces types d'application facile a utilises et avec PHPUnit pour effectuer des testes unitaires.
 
 ## Instructions pour exécuter le projet
 1. Clonez le dépôt.
