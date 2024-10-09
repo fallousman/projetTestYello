@@ -25,7 +25,7 @@ class CoursesApiTest extends TestCase {
    
      if (curl_errno($ch)) {
         $error_msg = curl_error($ch);
-        echo "cURL error: $error_msg\n"; // Affichez l'erreur cURL
+        echo "cURL error: $error_msg\n"; 
    }
     
   //  curl_close($ch);
