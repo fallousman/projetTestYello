@@ -65,9 +65,19 @@ function addCourse($db) {
         $stmt = $db->prepare($query);
         
         // Validation des données
-        $stmt->bindParam(':title', htmlspecialchars(strip_tags($data['title'])));
-        $stmt->bindParam(':description', htmlspecialchars(strip_tags($data['description'])));
-        $stmt->bindParam(':level', htmlspecialchars(strip_tags($data['level'])));
+       // $stmt->bindParam(':title', htmlspecialchars(strip_tags($data['title'])));
+       // $stmt->bindParam(':description', htmlspecialchars(strip_tags($data['description'])));
+       // $stmt->bindParam(':level', htmlspecialchars(strip_tags($data['level'])));
+
+        $title = htmlspecialchars(strip_tags($data['title']));
+        $stmt->bindParam(':title', $title);
+        $description = htmlspecialchars(strip_tags($data['description']));
+        $stmt->bindParam(':description', $description);
+        $level = htmlspecialchars(strip_tags($data['level']));
+        $stmt->bindParam(':level', $level);
+
+
+
         
         if ($stmt->execute()) {
             echo json_encode(["message" => "Cours ajouté avec succès"]);
@@ -87,11 +97,19 @@ function updateCourse($db, $id) {
         $stmt = $db->prepare($query);
 
         // Validation des données
-        $stmt->bindParam(':title', htmlspecialchars(strip_tags($data['title'])));
-        $stmt->bindParam(':description', htmlspecialchars(strip_tags($data['description'])));
-        $stmt->bindParam(':level', htmlspecialchars(strip_tags($data['level'])));
-        $stmt->bindParam(':id', $id);
+       // $stmt->bindParam(':title', htmlspecialchars(strip_tags($data['title'])));
+       // $stmt->bindParam(':description', htmlspecialchars(strip_tags($data['description'])));
+       // $stmt->bindParam(':level', htmlspecialchars(strip_tags($data['level'])));
+      //  $stmt->bindParam(':id', $id);
 
+      $title = htmlspecialchars(strip_tags($data['title']));
+      $stmt->bindParam(':title', $title);
+      $description = htmlspecialchars(strip_tags($data['description']));
+      $stmt->bindParam(':description', $description);
+      $level = htmlspecialchars(strip_tags($data['level']));
+      $stmt->bindParam(':level', $level);
+      $stmt->bindParam(':id', $id);
+      
         if ($stmt->execute()) {
             echo json_encode(["message" => "Cours mis à jour avec succès"]);
         } else {
