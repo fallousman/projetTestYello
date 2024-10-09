@@ -1,0 +1,1 @@
+{"version":1,"defects":{"CoursesApiTest::testAddCourse":8,"CoursesApiTest::testGetCourses":7},"times":{"CoursesApiTest::testAddCourse":0.054,"CoursesApiTest::testGetCourses":0.028}}
